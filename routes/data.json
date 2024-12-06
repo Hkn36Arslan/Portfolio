@@ -1,0 +1,54 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript",
+            "progress": 80,
+            "color": "green"
+        },
+        {
+            "name": "HTML",
+            "progress": 60,
+            "color": "blue"
+        },
+        {
+            "name": "NodeJS",
+            "progress": 10,
+            "color": "rgb(185, 78, 237)"
+        },
+        {
+            "name": "CSS",
+            "progress": 60,
+            "color": "red"
+        }
+    ],
+    "projects": [
+        {
+            "image": "assets/images/projectImage1.jpeg",
+            "title": "Project 1",
+            "description": "Description of project 1",
+            "link": "https://demo33.areatasarim.com/proje-icerik/ornek-proje-6"
+        },
+        {
+            "image": "assets/images/projectImage2.png",
+            "title": "Project 2",
+            "description": "Description of project 2",
+            "link": "https://www.iwt.com.tr/projeler/web-tasarim-projeleri-1/"
+        },
+        {
+            "image": "assets/images/projectImage3.jpg",
+            "title": "Project 3",
+            "description": "Description of project 3",
+            "link": "https://www.idebu.com/projeler/web-tasarim"
+        }
+    ],
+    "testimonials": [
+        {
+            "message": "Great work!",
+            "client": "Hakan Arslan"
+        },
+        {
+            "message": "Very satisfied!",
+            "client": "Era Rf Technologies"
+        }
+    ]
+}

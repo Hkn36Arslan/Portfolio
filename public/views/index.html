@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" id="theme-stylesheet" href="/darkTheme.css"> -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Yandan Açılır Menü -->
+        <div class="sidebar" id="mySidebar">
+            <button class="closebtn" id="closebtn">x</button>
+            <a class="nav-link active" href="#about">About Me</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+        <!-- Ana Sayfa Başlığı -->
+        <header class="app-header">
+            <nav class="navbar">
+                <span id="openbtn" class="openbtn">☰</span>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div id="theme-icons" class="navbar-icons">
+                        <i id="theme"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hakkında Bölümü -->
+        <div class="wrapper">
+            <section id="about" class="section">
+                <div class="container">
+                    <h2 class="display-4">About Me</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/assets/images/image1.jpeg" alt="Your Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, ea sunt
+                                perspiciatis animi dignissimos distinctio ipsam soluta quae provident dolorem eum! Sequi
+                                quod obcaecati error vitae aspernatur quaerat harum iusto! I'm a passionate software
+                                developer with expertise in building scalable web applications...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Yetenekler Bölümü -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2 class="display-4">Skills</h2>
+                    <div class="row" id="skills-container">
+                        <!-- Dinamik yapı buraya gelecek -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projeler Bölümü -->
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="display-4">Projects</h2>
+                    <div id="projects-container" class="carousel-container">
+                        <!-- Dinamik içerikler buraya eklenecek -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Referanslar Bölümü -->
+            <section id="testimonials" class="section">
+                <div class="container">
+                    <h2 class="display-4">Testimonials</h2>
+                    <div class="row" id="testimonials-container">
+                        <!-- Dinamik yapı buraya gelecek -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- İletişim Bölümü -->
+            <section id="contact" class="section">
+                <div class="container">
+                    <div id="alert-message" class="alerMessage">
+                        <div class="alert-success">
+                            <span id="alert-text"></span>
+                        </div>
+                    </div>
+                    <h2 class="display-4">Contact Me</h2>
+                    <form id="contact-form" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="file">Upload File</label>
+                            <input type="file" id="file" accept=".jpg, .jpeg, .png, .pdf" required>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+            <div class="chatImg" id="openChatbot">
+                <img src="/assets/images/chatBot.png" alt="chatBotImg">
+            </div>
+            <div id="chatbot" class="chatbot">
+                <div class="chatbot-header">
+                    <img style="width: 40px;height: 40px;" src="/assets/images/chatBot.png" alt="chatBotImg">
+                    <span>Chat with us</span>
+                    <button id="closeChatbot" class="close-chatbot">X</button>
+                </div>
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <!-- Messages will appear here -->
+                </div>
+                <form style="border-color: rgb(32, 32, 37);" class="chatbot-input" id="chatbotForm">
+                    <input type="text" id="chatbotInput" placeholder="Type a message..." required>
+                    <button type="submit" id="sendMessage">
+                        <svg style="width:1.5rem;height:1.5rem;" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path class="svg"
+                                d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Hakan ARSLAN. All Rights Reserved.</p>
+            <div>
+                <a href="#" class="text-primary"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-primary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
